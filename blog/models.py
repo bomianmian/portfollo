@@ -11,3 +11,6 @@ class Blog(models.Model):
 
 	def __str__(self):
 		return self.title
+
+	def shor_text(self):
+		return self.text[:50] + '...'
